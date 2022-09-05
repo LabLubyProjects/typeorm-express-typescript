@@ -4,7 +4,7 @@ import { DataSource } from "typeorm";
 
 const port = process.env.DB_PORT as number | undefined;
 
-const AppDataSource = new DataSource({
+export const AppDataSource = new DataSource({
   type: 'mysql',
   host: process.env.DB_HOST,
   port,
